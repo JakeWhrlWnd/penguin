@@ -1,0 +1,69 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));
+}
+
+.left-mountain {
+    position: absolute;
+    z-index: 2;
+    
+    width: 300px;
+    height: 300px;
+
+    margin-top: 100px;
+
+    transform: skew(0deg, 44deg);
+
+    background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
+}
+
+.back-mountain {
+    position: absolute;
+    top: 225px;
+    left: 110px;
+    z-index: 1;
+
+    width: 300px;
+    height: 300px;
+
+    transform: rotate(45deg);
+
+    background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255));
+}
+
+.sun {
+    position: absolute;
+    top: -75px;
+    right: -75px;
+
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+
+    background-color: yellow;
+}
+
+.ground {
+    z-index: 3;
+    position: absolute;
+
+    width: 100vw;
+    height: 400px;
+
+    margin-top: -58px;
+
+    background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
+}
+
+.penguin {
+    width: 300px;
+    height: 300px;
+
+    margin: 0 auto;
+    margin-top: 75px;
+}
