@@ -48,6 +48,93 @@ body {
     background-color: yellow;
 }
 
+.penguin {
+    z-index: 4;
+    position: relative;
+
+    width: 300px;
+    height: 300px;
+
+    margin: auto;
+    margin-top: 75px;
+}
+
+.penguin * {
+    position: relative;
+}
+
+.penguin-head {
+    z-index: 1;
+    top: 10%;
+    left: 25%;
+
+    width: 50%;
+    height: 45%;
+
+    border-radius: 70% 70% 65% 65%;
+
+    background: linear-gradient(45deg, gray, rgb(239, 240, 228));
+}
+
+.face {
+    top: 15%;
+
+    width: 60%;
+    height: 70%;
+
+    border-radius: 70% 70% 60% 60%;
+
+    background-color: white;
+}
+
+.face.left {
+    left: 5%;
+}
+
+.face.right {
+    right: 5%;
+}
+
+.chin {
+    top: 25%;
+    left: 5%;
+
+    width: 90%;
+    height: 70%;
+
+    border-radius: 70% 70% 100% 100%;
+    
+    background-color: white;
+}
+
+.penguin-body {
+    top: 40%;
+    left: 23.5%;
+
+    width: 53%;
+    height: 45%;
+
+    border-radius: 80% 80% 100% 100%;
+
+    background: linear-gradient(45deg, rgb(134, 133, 133) 0%, rgb(234, 231, 231) 25%, white 67%);
+}
+
+.penguin-body::before {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+
+    width: 50%;
+    height: 45%;
+
+    border-radius: 0% 0% 100% 100%;
+
+    background-color: gray;
+    opacity: 70%;
+
+    content:"";
+}
+
 .ground {
     z-index: 3;
     position: absolute;
@@ -58,12 +145,4 @@ body {
     margin-top: -58px;
 
     background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
-}
-
-.penguin {
-    width: 300px;
-    height: 300px;
-
-    margin: 0 auto;
-    margin-top: 75px;
 }
